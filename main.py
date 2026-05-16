@@ -100,7 +100,7 @@ if __name__ == '__main__':
     keep_alive()
     
     # 2. os.environ을 사용해 안전하게 토큰을 가져옴 (코드에 토큰이 노출되지 않음!)
-    BOT_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
+    BOT_TOKEN = os.environ.get('BOT_TOKEN')
     
     if BOT_TOKEN is None:
         print("❌ 오류: 'DISCORD_BOT_TOKEN' 환경 변수가 설정되지 않았습니다.")
